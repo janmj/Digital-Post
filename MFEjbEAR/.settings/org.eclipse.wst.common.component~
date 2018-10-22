@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MFEjbEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="MeldingsformidlerEJB.jar" deploy-path="/" handle="module:/resource/MeldingsformidlerEJB/MeldingsformidlerEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcpkix-jdk15on-151.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/BouncyCastle/crypto-151/bcpkix-jdk15on-151.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/apache-commons/commons-lang-2.6/commons-lang-2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sikker-digital-post-java-klient-1.1.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/sikker-digital-post-java-klient-1.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcprov-jdk15on-151.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/BouncyCastle/crypto-151/bcprov-jdk15on-151.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="joda-time-2.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/joda-time-2.4/joda-time-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mailapi-1.5.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mailapi-1.5.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jnp-client-5.0.5.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jnp-client-5.0.5.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="beanvalidation-deployers-1.0.0-Beta-1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/beanvalidation-deployers-1.0.0-Beta-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-module-fml-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-module-fml-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="picketbox-spi-bare-3.0.0.CR2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/picketbox-spi-bare-3.0.0.CR2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-http-shared-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-http-shared-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-mapper-asl-1.9.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jackson-mapper-asl-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bsh-2.0b4.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bsh-2.0b4.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="surefire-junit4-2.16.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/surefire-junit4-2.16.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="qdox-1.12.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/qdox-1.12.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="quartz-1.8.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/quartz-1.8.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcpkix-jdk15on-1.50.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bcpkix-jdk15on-1.50.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="joesnmp-0.3.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/joesnmp-0.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxen-1.1.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxen-1.1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpcore-4.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="saaj-impl-1.3.23.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/saaj-impl-1.3.23.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jettison-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jettison-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xml-resolver-1.2.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xml-resolver-1.2.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classworlds-1.1-alpha-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/classworlds-1.1-alpha-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="archetype-common-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/archetype-common-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-1.5.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-1.5.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="geronimo-jaxws_2.2_spec-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/geronimo-jaxws_2.2_spec-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="getopt-1.0.12-brew.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/getopt-1.0.12-brew.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-jaxrs-1.9.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jackson-jaxrs-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-cdi-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-cdi-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jsr311-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j-ws-security-dom-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wss4j-ws-security-dom-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackrabbit-webdav-2.5.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jackrabbit-webdav-2.5.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="apache-mime4j-0.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/apache-mime4j-0.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ant-launcher-1.8.4.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ant-launcher-1.8.4.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="geronimo-javamail_1.4_spec-1.7.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/geronimo-javamail_1.4_spec-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="google-collect-snapshot-20080530.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/google-collect-snapshot-20080530.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax2-api-3.1.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/stax2-api-3.1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="file-management-1.2.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/file-management-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jacc-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jacc-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xml-apis-ext-1.3.04.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xml-apis-ext-1.3.04.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-log4j12-1.6.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/slf4j-log4j12-1.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-boot-classpath-detector-1.11.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/java-boot-classpath-detector-1.11.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb2-basics-runtime-0.6.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxb2-basics-runtime-0.6.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jtidy-4aug2000r7-dev.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jtidy-4aug2000r7-dev.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jettison-1.3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jettison-1.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opensaml-1.1b.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/opensaml-1.1b.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcl-over-slf4j-1.7.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jcl-over-slf4j-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="archetype-catalog-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/archetype-catalog-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="XmlSchema-1.4.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/XmlSchema-1.4.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xml-apis-2.9.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xml-apis-2.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-velocity-1.1.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-velocity-1.1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="exec-maven-plugin-1.2.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/exec-maven-plugin-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="marshalling-api-1.2.3.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/marshalling-api-1.2.3.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="guava-10.0.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/guava-10.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-jaxb-provider-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-jaxb-provider-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="rhq-pluginAnnotations-3.0.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/rhq-pluginAnnotations-3.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="isorelax-20030225.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/isorelax-20030225.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wstx-asl-3.2.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wstx-asl-3.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resolver-20050927.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resolver-20050927.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-compiler-api-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-compiler-api-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="managed-beans-metadata-1.0.0-alpha-6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/managed-beans-metadata-1.0.0-alpha-6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-multipart-provider-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-multipart-provider-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="river-1.2.3.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/river-1.2.3.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-component-annotations-1.5.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-component-annotations-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xbean-reflect-3.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xbean-reflect-3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="surefire-junit3-2.12.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/surefire-junit3-2.12.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="shrinkwrap-api-1.0.0-alpha-11.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/shrinkwrap-api-1.0.0-alpha-11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-3.0.7.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-aop-3.0.7.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-sec-dispatcher-1.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-sec-dispatcher-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="picketbox-bare-3.0.0.CR2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/picketbox-bare-3.0.0.CR2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ant-1.8.4.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ant-1.8.4.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr305-2.0.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jsr305-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-digest-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-digest-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sjsxp-1.0.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sjsxp-1.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ant-nodeps-1.8.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ant-nodeps-1.8.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-commons-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-commons-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="woodstox-core-asl-4.3.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/woodstox-core-asl-4.3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-yaml-provider-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-yaml-provider-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="emma_ant-2.0.5312.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/emma_ant-2.0.5312.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oauth-provider-20100527.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/oauth-provider-20100527.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsch-0.1.27.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jsch-0.1.27.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr250-api-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jsr250-api-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="proxy-javassist-1.0.0-alpha-1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/proxy-javassist-1.0.0-alpha-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.12.0.GA.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/javassist-3.12.0.GA.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-tree-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-tree-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-interpolation-1.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-interpolation-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jdom-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jdom-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j-ws-security-common-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wss4j-ws-security-common-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-analysis-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-analysis-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hornetq-core-2.1.2.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/hornetq-core-2.1.2.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-utils-3.0.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-utils-3.0.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcprov-jdk15on-1.50.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bcprov-jdk15on-1.50.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="js-1.7R2.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/js-1.7R2.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sikker-digital-post-java-klient-1.1.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sikker-digital-post-java-klient-1.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="surefire-api-2.16.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/surefire-api-2.16.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dtdparser-1.21.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/dtdparser-1.21.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpasyncclient-4.0-beta3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpasyncclient-4.0-beta3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sdp-xsd-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sdp-xsd-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="enforcer-rules-1.3.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/enforcer-rules-1.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-interactivity-api-1.0-alpha-5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-interactivity-api-1.0-alpha-5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jchardet-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jchardet-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcl-over-slf4j-1.5.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jcl-over-slf4j-1.5.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wsdl4j-1.6.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wsdl4j-1.6.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb2-basics-runtime-0.6.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxb2-basics-runtime-0.6.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-xc-1.9.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jackson-xc-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xnio-api-2.1.0.CR2.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xnio-api-2.1.0.CR2.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-over-slf4j-1.7.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/log4j-over-slf4j-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="proxy-reflect-1.0.0-alpha-1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/proxy-reflect-1.0.0-alpha-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="itextpdf-5.3.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/itextpdf-5.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hamcrest-core-1.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/hamcrest-core-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ehcache-2.8.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ehcache-2.8.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-decoration-model-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-decoration-model-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="surefire-booter-2.16.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/surefire-booter-2.16.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pluggable-instrumentor-2.2.2.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/pluggable-instrumentor-2.2.2.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mcann-core-1.0.0.Alpha1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mcann-core-1.0.0.Alpha1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail-1.4.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mail-1.4.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="servlet-api-2.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/servlet-api-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wstx-lgpl-3.2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wstx-lgpl-3.2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="archetype-descriptor-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/archetype-descriptor-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="policy-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/policy-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="geronimo-jms_1.1_spec-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/geronimo-jms_1.1_spec-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oro-2.0.8.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/oro-2.0.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-rt-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxws-rt-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-asl-1.9.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jackson-core-asl-1.9.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="identity-spi-3.0.0.CR2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/identity-spi-3.0.0.CR2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-1.1.0.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/validation-api-1.1.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-3.3.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-3.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax-api-1.0-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/stax-api-1.0-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FastInfoset-1.2.12.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/FastInfoset-1.2.12.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jul-to-slf4j-1.7.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jul-to-slf4j-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fop-1.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/fop-1.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-jaxrs-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-jaxrs-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="geronimo-servlet_3.0_spec-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/geronimo-servlet_3.0_spec-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="google-collections-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/google-collections-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-impl-2.2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxb-impl-2.2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.12.1.GA.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/javassist-3.12.1.GA.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="proxy-spi-1.0.0-alpha-1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/proxy-spi-1.0.0-alpha-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jnpserver-5.0.5.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jnpserver-5.0.5.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jfreechart-1.0.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jfreechart-1.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mycila-xmltool-4.2.ga.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mycila-xmltool-4.2.ga.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="model-builder-1.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/model-builder-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-cipher-1.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-cipher-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="activation-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/activation-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="netty-3.2.1.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/netty-3.2.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jettison-1.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jettison-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bsf-2.4.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bsf-2.4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xercesImpl-2.9.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xercesImpl-2.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jgroups-2.11.0.GA.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jgroups-2.11.0.GA.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-file-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-file-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j-1.6.12.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wss4j-1.6.12.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-provider-api-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-provider-api-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="trove-1.0.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/trove-1.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-io-2.0.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-io-2.0.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejb31-calendar-expr-parser-1.0.0-alpha-13.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ejb31-calendar-expr-parser-1.0.0-alpha-13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mina-core-2.0.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mina-core-2.0.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="surefire-junit4-2.10.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/surefire-junit4-2.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit-4.11.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/junit-4.11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlsec-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmlsec-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="relaxngDatatype-20050407.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/relaxngDatatype-20050407.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cglib-2.1_3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/cglib-2.1_3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlbeans-2.5.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmlbeans-2.5.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-sink-api-1.0-alpha-10.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-sink-api-1.0-alpha-10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="snakeyaml-1.8.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/snakeyaml-1.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-active-collections-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-active-collections-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wstx-asl-3.2.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wstx-asl-3.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-httpserver-httpspi-1.0.0.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxws-httpserver-httpspi-1.0.0.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-sink-api-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-sink-api-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-module-apt-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-module-apt-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="picketbox-acl-impl-3.0.0.CR2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/picketbox-acl-impl-3.0.0.CR2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fest-util-1.2.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/fest-util-1.2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-tools-2.2.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxws-tools-2.2.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-compiler-javac-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-compiler-javac-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="emma-2.0.5312.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/emma-2.0.5312.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-xjc-2.2.6.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxb-xjc-2.2.6.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-i18n-1.0-beta-7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-i18n-1.0-beta-7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="opensaml-2.6.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/opensaml-2.6.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="postgresql-9.1-901-1.jdbc4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/postgresql-9.1-901-1.jdbc4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xsdlib-2010.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xsdlib-2010.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aether-util-0.9.0.M2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/aether-util-0.9.0.M2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="msv-core-2011.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/msv-core-2011.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-core-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-core-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oauth-20100527.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/oauth-20100527.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sisu-guice-3.1.0-no_aop.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sisu-guice-3.1.0-no_aop.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpserver-1.0.0.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpserver-1.0.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmltooling-1.3.2-1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmltooling-1.3.2-1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="scout-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/scout-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="logback-core-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/logback-core-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jettison-1.0-RC2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jettison-1.0-RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ehcache-core-2.5.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ehcache-core-2.5.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-container-default-1.0-alpha-9-stable-1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-container-default-1.0-alpha-9-stable-1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jnp-client-5.0.4.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jnp-client-5.0.4.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="groovy-1.8.3.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/groovy-1.8.3.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="camel-core-2.10.0.redhat-60024.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/camel-core-2.10.0.redhat-60024.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wstx-asl-3.2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wstx-asl-3.2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-jettison-provider-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-jettison-provider-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="weld-api-1.1.Beta2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/weld-api-1.1.Beta2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="shrinkwrap-impl-base-1.0.0-alpha-11.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/shrinkwrap-impl-base-1.0.0-alpha-11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="joda-time-2.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/joda-time-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-logging-api-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-logging-api-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-jdk14-1.6.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/slf4j-jdk14-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="picketbox-identity-impl-3.0.0.CR2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/picketbox-identity-impl-3.0.0.CR2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb-api-2.2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxb-api-2.2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="openws-1.5.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/openws-1.5.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-utils-3.0.9.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-utils-3.0.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="stax-ex-1.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/stax-ex-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxrpc-api-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxrpc-api-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="policy-2.0-b01.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/policy-2.0-b01.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="animal-sniffer-maven-plugin-1.11.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/animal-sniffer-maven-plugin-1.11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="velocity-1.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/velocity-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-module-xdoc-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-module-xdoc-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlschema-core-2.0.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmlschema-core-2.0.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="neethi-3.0.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/neethi-3.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="archetype-registry-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/archetype-registry-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fest-assert-core-2.0M10.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/fest-assert-core-2.0M10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-http-lightweight-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-http-lightweight-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="regexp-1.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/regexp-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="serializer-2.7.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/serializer-2.7.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-utils-3.0.8.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-utils-3.0.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclient-4.3.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpclient-4.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mailapi-1.5.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mailapi-1.5.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.eclipse.sisu.inject-0.0.0.M2a.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/org.eclipse.sisu.inject-0.0.0.M2a.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="streambuffer-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/streambuffer-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="enforcer-api-1.3.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/enforcer-api-1.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/aopalliance-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-jackson-provider-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-jackson-provider-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="camel-test-2.10.0.redhat-60024.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/camel-test-2.10.0.redhat-60024.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcommon-1.0.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jcommon-1.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resteasy-atom-provider-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/resteasy-atom-provider-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/antlr-2.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="logback-classic-1.1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/logback-classic-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="infinispan-core-4.2.0.BETA1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/infinispan-core-4.2.0.BETA1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-webdav-jackrabbit-2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-webdav-jackrabbit-2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-getopt-1.0.13.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/java-getopt-1.0.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr181-api-1.0-MR1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jsr181-api-1.0-MR1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jta-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-ssh-external-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-ssh-external-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="backport-util-concurrent-3.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/backport-util-concurrent-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-compiler-manager-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-compiler-manager-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-util-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-util-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-all-4.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-all-4.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxrs-api-2.2.1.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxrs-api-2.2.1.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail-1.4.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/mail-1.4.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="authorization-spi-3.0.0.CR2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/authorization-spi-3.0.0.CR2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-site-renderer-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-site-renderer-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hamcrest-core-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/hamcrest-core-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-ssh-common-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-ssh-common-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="txw2-20090102.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/txw2-20090102.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wrapper-3.2.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wrapper-3.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="shrinkwrap-spi-1.0.0-alpha-11.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/shrinkwrap-spi-1.0.0-alpha-11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejbref-resolver-ejb31-impl-1.0.0-alpha-4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ejbref-resolver-ejb31-impl-1.0.0-alpha-4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.7.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/slf4j-api-1.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejbref-resolver-spi-1.0.0-alpha-4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ejbref-resolver-spi-1.0.0-alpha-4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxws-codefirst-1.0.0.Beta1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxws-codefirst-1.0.0.Beta1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-nio-4.2.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpcore-nio-4.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/asm-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cdi-api-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/cdi-api-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcel-5.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bcel-5.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jasypt-1.9.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jasypt-1.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxrs-api-3.0.6.Final.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxrs-api-3.0.6.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="i18nlog-1.0.10.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/i18nlog-1.0.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wsit-rt-1.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wsit-rt-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="diffutils-1.2.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/diffutils-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-module-xhtml-1.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/doxia-module-xhtml-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-archiver-2.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-archiver-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmltooling-1.4.1.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmltooling-1.4.1.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlgraphics-commons-1.5.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmlgraphics-commons-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ejb3-persistence-1.0.2.GA.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/ejb3-persistence-1.0.2.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-velocity-1.1.8.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/plexus-velocity-1.1.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-ssh-1.0-beta-2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wagon-ssh-1.0-beta-2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="animal-sniffer-1.11.jar" deploy-path="/" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/animal-sniffer-1.11.jar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcl-over-slf4j-1.7.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jcl-over-slf4j-1.7.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-collections-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

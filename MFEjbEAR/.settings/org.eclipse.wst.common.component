@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MFEjbEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="MeldingsformidlerEJB.jar" deploy-path="/" handle="module:/resource/MeldingsformidlerEJB/MeldingsformidlerEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-core-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-httpclient-3.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-httpclient-3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-xml-2.2.0.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-xml-2.2.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-log4j12-1.6.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/slf4j-log4j12-1.6.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-expression-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-beans-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-core-3.2.4.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-security-core-3.2.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore-4.3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpcore-4.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.8.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-beanutils-1.8.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-1.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-digester-1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclient-4.3.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/httpclient-4.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.9.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-codec-1.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-context-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-validator-1.2.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-validator-1.2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-ws-security-2.2.0.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-ws-security-2.2.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-collections-3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-2.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-io-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.3.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-logging-1.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-lang-2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxb2-basics-runtime-0.6.5.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxb2-basics-runtime-0.6.5.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="joda-time-2.4.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/joda-time-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-ws-core-2.2.0.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-ws-core-2.2.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-webmvc-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-aop-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-tx-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-oxm-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-oxm-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-4.0.5.RELEASE.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/spring-web-4.0.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang3-3.3.2.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-lang3-3.3.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-compress-1.8.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/commons-compress-1.8.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcprov-jdk15on-1.50.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bcprov-jdk15on-1.50.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="bcpkix-jdk15on-1.50.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/bcpkix-jdk15on-1.50.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j-ws-security-dom-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wss4j-ws-security-dom-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j-1.6.12.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wss4j-1.6.12.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wss4j-ws-security-common-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/wss4j-ws-security-common-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmlsec-2.0.0.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/xmlsec-2.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jaxen-1.1.6.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/jaxen-1.1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sikker-digital-post-java-klient-1.2.1.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sikker-digital-post-java-klient-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sdp-xsd-1.1.13.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sdp-xsd-1.1.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sdp-api-client-1.1.13.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sdp-api-client-1.1.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sdp-api-commons-1.1.13.jar" deploy-path="/lib" handle="module:/classpath/lib//home/janmj/java/SDP-DEP/sdp-api-commons-1.1.13.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

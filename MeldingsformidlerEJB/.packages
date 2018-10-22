@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages version="1.3">
+  <package exploded="false" inWorkspace="true" name="MLFSchedule.jar" todir="/MeldingsformidlerEJB" type="jar">
+    <fileset dir="target/classes" flatten="false" inWorkspace="true" includes="**/no/si/sdp/utils/Sendbrev**,**/no/si/sdp/service/util/**,**/no/si/sdp/utils/HentKvitt**">
+      <properties/>
+    </fileset>
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="14096462689156066575313254590031483"/>
+    </properties>
+  </package>
+  <properties/>
+</packages>

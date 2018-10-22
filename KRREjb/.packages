@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<packages version="1.3">
+  <package exploded="false" inWorkspace="true" name="KRR.jar" todir="/KRREjb" type="jar">
+    <fileset dir="build/classes" flatten="false" inWorkspace="true" includes="**">
+      <properties/>
+    </fileset>
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="141147832400848082202183076790031483"/>
+    </properties>
+  </package>
+  <package exploded="false" inWorkspace="true" name="KRRSchedule.jar" todir="/KRREjb" type="jar">
+    <fileset dir="ejbModule" flatten="false" inWorkspace="true" includes="no/si/sdp/utils/Update*, no/si/sdp/service/util/*.*">
+      <properties/>
+    </fileset>
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="14156987210393700371631296590031483"/>
+    </properties>
+  </package>
+  <properties/>
+</packages>
