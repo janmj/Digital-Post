@@ -27,7 +27,7 @@ public class ClientKeystorePasswordCallbackHandler implements CallbackHandler {
 		
 		for(Callback callback : callbacks){
 			WSPasswordCallback wpc = (WSPasswordCallback) callback;
-			if(wpc.getIdentifier().equals(alias)){	
+			if(wpc.getIdentifier().equals(alias)){
 				wpc.setPassword(password);
 				return;
 			}

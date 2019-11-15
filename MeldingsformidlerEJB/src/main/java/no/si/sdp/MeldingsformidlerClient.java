@@ -230,7 +230,13 @@ public class MeldingsformidlerClient {
 				no.si.sdp.utils.log.Logger.logError("Feilet i oppretting av SMS varsel: " + e.getMessage(), forsendelse.getConversationid());
 			}
 			
-			behandlingsansvarlig = Behandlingsansvarlig.builder(AVSENDER_ORGNUMMER).build();
+			try{
+				behandlingsansvarlig = Behandlingsansvarlig.builder(forsendelse.getBehandlingsansvarlig().getOrganisasjonsnummer()).
+						avsenderIdentifikator(forsendelse.getBehandlingsansvarlig().getAvsenderIdentifikator()).build();
+			}catch(Exception e){
+				behandlingsansvarlig = Behandlingsansvarlig.builder(AVSENDER_ORGNUMMER).build();
+				log.error("Feilet med bygging av behandlingsansvaarlig. Sender default.");
+			}
 			
 			if(sendsmsvarsel && sendepostvarsel){
 				post = DigitalPost.builder(mottaker, forsendelse.getDigitalpost().getIkkeSensitivTittel())

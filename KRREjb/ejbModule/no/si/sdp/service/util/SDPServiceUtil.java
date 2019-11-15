@@ -1,6 +1,9 @@
 package no.si.sdp.service.util;
 
 import javax.ejb.Asynchronous;
+import javax.ejb.LocalBean;
+import javax.ejb.Schedule;
+import javax.ejb.Singleton;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
@@ -62,7 +65,7 @@ public @Stateless class SDPServiceUtil implements SDPServiceUtilRemote {
 	@Asynchronous
 	@WebMethod
 	@TransactionAttribute(TransactionAttributeType.NEVER)
-	//@Schedule(hour="*", minute="*/2", persistent=false, info="Timer for å rydde oppi database poolen")
+	@Schedule(hour="*", minute="*/2", persistent=false, info="Timer for å rydde oppi database poolen")
 	public void resetDBPool() throws Exception {
 		try {
 			KRRServices service = new KRRServices();

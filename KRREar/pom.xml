@@ -22,16 +22,11 @@
   </build>
   <dependencies>
   	<dependency>
-  		<groupId>wss4j</groupId>
-  		<artifactId>wss4j</artifactId>
-  		<version>1.5.1</version>
-  	</dependency>
-  	<dependency>
   		<groupId>KRREjb</groupId>
   		<artifactId>KRREjb</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   		<type>ejb</type>
-  		<scope>runtime</scope>
+  		<scope>provided</scope>
   		<exclusions>
   			<exclusion>
   				<artifactId>wildfly-ejb3</artifactId>
@@ -49,7 +44,7 @@
   			</exclusion>
   			<exclusion>
   				<artifactId>
-  					jbossws-wildfly902-server-integration
+  					jbossws-wildfly1000-server-integration
   				</artifactId>
   				<groupId>org.jboss.ws</groupId>
   			</exclusion>

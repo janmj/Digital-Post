@@ -60,7 +60,7 @@
   		<artifactId>junit</artifactId>
   		<version>4.12</version>
   	</dependency>
- 
+ <!-- 
   	<dependency>
   		<groupId>org.wildfly</groupId>
   		<artifactId>wildfly-ejb3</artifactId>
@@ -77,6 +77,8 @@
   		<artifactId>jboss-annotations-api_1.2_spec</artifactId>
   		<version>1.0.0.Final</version>
   	</dependency>
+ -->
+ 	
   	<dependency>
   		<groupId>log4j</groupId>
   		<artifactId>log4j</artifactId>
@@ -84,8 +86,8 @@
   	</dependency>
   	<dependency>
   		<groupId>org.jboss.ws</groupId>
-  		<artifactId>jbossws-wildfly902-server-integration</artifactId>
-  		<version>5.1.1.Final</version>
+  		<artifactId>jbossws-wildfly1000-server-integration</artifactId>
+  		<version>5.1.4.Final</version>
   	</dependency>
   	<dependency>
   		<groupId>wss4j</groupId>
@@ -105,4 +107,5 @@
   		<scope>provided</scope>
   	</dependency>
   </dependencies>
+  <packaging>ejb</packaging>
 </project>

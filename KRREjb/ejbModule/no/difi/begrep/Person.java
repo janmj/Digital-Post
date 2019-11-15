@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="personidentifikator" type="{http://begrep.difi.no}personidentifikator"/>
  *         &lt;element name="reservasjon" type="{http://begrep.difi.no}reservasjon" minOccurs="0"/>
  *         &lt;element name="status" type="{http://begrep.difi.no}status" minOccurs="0"/>
- *         &lt;element name="beskrivelse" type="{http://begrep.difi.no}beskrivelse" minOccurs="0"/>
+ *         &lt;element name="varslingsstatus" type="{http://begrep.difi.no}varslingsstatus" minOccurs="0"/>
  *         &lt;element name="Kontaktinformasjon" type="{http://begrep.difi.no}Kontaktinformasjon" minOccurs="0"/>
  *         &lt;element name="SikkerDigitalPostAdresse" type="{http://begrep.difi.no}SikkerDigitalPostAdresse" minOccurs="0"/>
  *         &lt;element name="X509Sertifikat" type="{http://begrep.difi.no}X509Sertifikat" minOccurs="0"/>
@@ -37,7 +37,7 @@ import javax.xml.bind.annotation.XmlType;
     "personidentifikator",
     "reservasjon",
     "status",
-    "beskrivelse",
+    "varslingsstatus",
     "kontaktinformasjon",
     "sikkerDigitalPostAdresse",
     "x509Sertifikat"
@@ -48,7 +48,7 @@ public class Person {
     protected String personidentifikator;
     protected Reservasjon reservasjon;
     protected Status status;
-    protected String beskrivelse;
+    protected Varslingsstatus varslingsstatus;
     @XmlElement(name = "Kontaktinformasjon")
     protected Kontaktinformasjon kontaktinformasjon;
     @XmlElement(name = "SikkerDigitalPostAdresse")
@@ -129,27 +129,27 @@ public class Person {
     }
 
     /**
-     * Gets the value of the beskrivelse property.
+     * Gets the value of the varslingsstatus property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Varslingsstatus }
      *     
      */
-    public String getBeskrivelse() {
-        return beskrivelse;
+    public Varslingsstatus getVarslingsstatus() {
+        return varslingsstatus;
     }
 
     /**
-     * Sets the value of the beskrivelse property.
+     * Sets the value of the varslingsstatus property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Varslingsstatus }
      *     
      */
-    public void setBeskrivelse(String value) {
-        this.beskrivelse = value;
+    public void setVarslingsstatus(Varslingsstatus value) {
+        this.varslingsstatus = value;
     }
 
     /**

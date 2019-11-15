@@ -1,6 +1,5 @@
 package no.si.sdp;
 
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,20 +14,23 @@ import org.apache.cxf.transports.http.configuration.HTTPClientPolicy;
 import org.jboss.logging.Logger;
 
 import no.difi.begrep.Person;
+
+import no.difi.kontaktinfo.wsdl.oppslagstjeneste_16_02.*;
+import no.difi.kontaktinfo.xsd.oppslagstjeneste._16_02.*;
+
+/*
 import no.difi.kontaktinfo.wsdl.oppslagstjeneste_14_05.Oppslagstjeneste1405;
-import no.difi.kontaktinfo.wsdl.oppslagstjeneste_14_05.Oppslagstjeneste1405Impl;
-import no.difi.kontaktinfo.wsdl.oppslagstjeneste_14_05.Oppslagstjeneste1405_Service;
 import no.difi.kontaktinfo.xsd.oppslagstjeneste._14_05.HentEndringerForespoersel;
 import no.difi.kontaktinfo.xsd.oppslagstjeneste._14_05.HentEndringerRespons;
 import no.difi.kontaktinfo.xsd.oppslagstjeneste._14_05.HentPersonerForespoersel;
 import no.difi.kontaktinfo.xsd.oppslagstjeneste._14_05.HentPersonerRespons;
 import no.difi.kontaktinfo.xsd.oppslagstjeneste._14_05.Informasjonsbehov;
+*/
 import no.si.sdp.cxf.WSS4JInterceptorHelper;
 import no.si.sdp.utils.PropertiesServices;
 
 public class KRRClient {
-    private static final QName SERVICE_NAME = new QName("http://kontaktinfo.difi.no/wsdl/oppslagstjeneste-14-05", "oppslagstjeneste-14-05");    
-    private Oppslagstjeneste1405 oppslagstjenesteport;
+    private Oppslagstjeneste1602 oppslagstjenesteport;
     static Logger log = Logger.getLogger(KRRClient.class);
     PropertiesServices prop = new PropertiesServices();
     
@@ -50,12 +52,12 @@ public class KRRClient {
 			//String serviceadress = "https://eid-inttest.difi.no/kontaktinfo-external/ws-v3";
 			
 			JaxWsProxyFactoryBean jaxwsproxyFactoryBean = new JaxWsProxyFactoryBean();
-			jaxwsproxyFactoryBean.setServiceClass(Oppslagstjeneste1405.class);
+			jaxwsproxyFactoryBean.setServiceClass(Oppslagstjeneste1602.class);
 			jaxwsproxyFactoryBean.setAddress(serviceadress);
-			
+			jaxwsproxyFactoryBean.setBindingId(javax.xml.ws.soap.SOAPBinding.SOAP12HTTP_BINDING);
 			WSS4JInterceptorHelper.addWs4jInterceptors(jaxwsproxyFactoryBean);
 			
-			oppslagstjenesteport = (Oppslagstjeneste1405) jaxwsproxyFactoryBean.create();
+			oppslagstjenesteport = (Oppslagstjeneste1602) jaxwsproxyFactoryBean.create();
 			
 			Client client = ClientProxy.getClient(oppslagstjenesteport);
 			HTTPConduit httpconduit = (HTTPConduit) client.getConduit();
@@ -67,6 +69,7 @@ public class KRRClient {
 			
 			TLSClientParameters tlclientsparam = new TLSClientParameters();
 			tlclientsparam.setDisableCNCheck(true);
+			//tlclientsparam.setSecureSocketProtocol("TLSv1.2");
 			httpconduit.setTlsClientParameters(tlclientsparam);
 			System.setProperty("com.sun.net.ssl.checkRevocation", "false");
 			
@@ -148,7 +151,7 @@ public class KRRClient {
 			retval = new ArrayList<Person>(resp.getPerson());
 		} catch (Exception e) {
 			e.printStackTrace();
-			//log.error(e);
+			log.error(e);
 			throw new Exception(e.getMessage());
 		}
 		return retval;

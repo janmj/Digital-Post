@@ -16,7 +16,7 @@ import no.difi.begrep.Person;
 import no.difi.sdp.client.domain.Prioritet;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name="sdpforsendelse", propOrder={"spraakkode","prioritet","mottaker","digitalpost","dokument","epostvarsel","smsvarsel","conversationid"})
+@XmlType(name="sdpforsendelse", propOrder={"spraakkode","prioritet","mottaker","digitalpost","dokument","epostvarsel","smsvarsel","conversationid","behandlingsansvarlig"})
 @XmlRootElement(namespace="urn:no.si.sdp.mlf")
 public class ForsendelseBean implements Serializable {
 	
@@ -38,6 +38,8 @@ public class ForsendelseBean implements Serializable {
 	private SmsVarselBean smsvarsel;
 	@XmlElement(required = false)
 	private String conversationid="";
+	@XmlElement(required = false)
+	private BehandlingsansvarligBean behandlingsansvarlig;
 	
 	public ForsendelseBean() {
 		super();
@@ -68,7 +70,6 @@ public class ForsendelseBean implements Serializable {
 		this.mottaker = mottaker;
 	}
 
-
 	public DigitalpostBean getDigitalpost() {
 		return digitalpost;
 	}
@@ -76,33 +77,37 @@ public class ForsendelseBean implements Serializable {
 	public void setDigitalpost(DigitalpostBean digitalpost) {
 		this.digitalpost = digitalpost;
 	}
-
+	
 	public DokumentBean getDokument() {
 		return dokument;
 	}
-
 
 	public void setDokument(DokumentBean dokument) {
 		this.dokument = dokument;
 	}
 
-
 	public EpostVarselBean getEpostvarsel() {
 		return epostvarsel;
 	}
-
 
 	public void setEpostvarsel(EpostVarselBean epostvarsel) {
 		this.epostvarsel = epostvarsel;
 	}
 
-
 	public SmsVarselBean getSmsvarsel() {
 		return smsvarsel;
 	}
 
-
 	public void setSmsvarsel(SmsVarselBean smsvarsel) {
 		this.smsvarsel = smsvarsel;
 	}
+
+	public BehandlingsansvarligBean getBehandlingsansvarlig() {
+		return behandlingsansvarlig;
+	}
+
+	public void setBehandlingsansvarlig(BehandlingsansvarligBean behandlingsansvarlig) {
+		this.behandlingsansvarlig = behandlingsansvarlig;
+	}
+	
 }

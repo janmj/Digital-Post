@@ -3,9 +3,12 @@ package no.si.sdp.service;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
-
-
+import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
@@ -13,10 +16,13 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
+import javax.swing.text.StyledEditorKit.BoldAction;
+import javax.xml.ws.Response;
 
 import no.difi.begrep.Person;
 import no.si.sdp.KRRClient;
-import no.si.sdp.beans.SjekkpersonBean;	
+import no.si.sdp.beans.SjekkpersonBean;
+import no.si.sdp.utils.KRRServices;
 import no.si.sdp.utils.PropertiesServices;
 import no.si.sdp.utils.fallback.FallbackFacade;
 import no.si.sdp.utils.log.Logger;

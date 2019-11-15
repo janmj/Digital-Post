@@ -19,7 +19,6 @@ import javax.ejb.EJB;
 import javax.management.InstanceNotFoundException;
 import javax.management.MBeanException;
 import javax.management.MBeanServer;
-import javax.management.MBeanServerFactory;
 import javax.management.MalformedObjectNameException;
 import javax.management.ObjectName;
 import javax.management.ReflectionException;
@@ -41,7 +40,7 @@ import no.difi.begrep.Person;
 import no.difi.begrep.Reservasjon;
 import no.difi.begrep.SikkerDigitalPostAdresse;
 import no.difi.begrep.Status;
-import no.difi.kontaktinfo.xsd.oppslagstjeneste._14_05.HentEndringerRespons;
+import no.difi.kontaktinfo.xsd.oppslagstjeneste._16_02.HentEndringerRespons;
 import no.si.sdp.KRRClient;
 
 public class KRRServices {
@@ -58,10 +57,10 @@ public class KRRServices {
 	public static void main(String[] args ){
 		KRRServices test = new KRRServices();
 		try {
-			//test.makeLocalKRR();
+			test.makeLocalKRR();
 			//test.updateKRR();			
 			//test.maintainKRR();
-			test.resetDBPool();
+			
 		} catch (Exception e) {
 			//log.error(e);
 			System.out.println(e.getMessage());
@@ -84,7 +83,7 @@ public class KRRServices {
 				retval.setPersonidentifikator(rs.getString("personidentifikator"));
 				retval.setReservasjon(Reservasjon.fromValue(rs.getString("reservasjon")));
 				retval.setStatus(Status.fromValue(rs.getString("status")));
-				retval.setBeskrivelse(rs.getString("beskrivelse"));
+				//retval.setBeskrivelse(rs.getString("beskrivelse"));
 				retval.setX509Sertifikat(rs.getBytes("x509sertifikat"));
 				try {
 					retval.setKontaktinformasjon(getKontaktinformasjon(personidentifikator));
@@ -286,7 +285,8 @@ public class KRRServices {
 						pstmtPers.setString(2, "");
 					}
 					try {
-						pstmtPers.setString(3, tmpPers.getBeskrivelse());
+						//pstmtPers.setString(3, tmpPers.getBeskrivelse()); fjernet i v5 grensesnittet
+						pstmtPers.setString(3, "");
 					} catch (Exception e2) {
 						pstmtPers.setString(3, "");
 					}
@@ -457,7 +457,8 @@ public class KRRServices {
 						pstmt.setString(3, "");
 					}
 					try {
-						pstmt.setString(4, tmpPers.getBeskrivelse());
+						//pstmt.setString(4, tmpPers.getBeskrivelse()); //Fjernet i v5 av grensesnittet
+						pstmt.setString(4, "");
 					} catch (Exception e2) {
 						pstmt.setString(4, "");
 					}
@@ -591,7 +592,8 @@ public class KRRServices {
 					pstmt.setString(3, "");
 				}
 				try {
-					pstmt.setString(4, tmpPers.getBeskrivelse());
+					//pstmt.setString(4, tmpPers.getBeskrivelse());//Fjernet i v5 av grensesnittet
+					pstmt.setString(4, "");
 				} catch (Exception e2) {
 					pstmt.setString(4, "");
 				}
@@ -741,7 +743,6 @@ public class KRRServices {
 			MBeanServer server = MBeanServerLocator.locateJBoss();
 			server.invoke(new ObjectName("jboss.jca:name=SDPDS,service=ManagedConnectionPool"), "flush", null, null);
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
 			log.error(e);
 		}
 	}
