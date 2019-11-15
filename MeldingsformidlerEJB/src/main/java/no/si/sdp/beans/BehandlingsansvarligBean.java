@@ -21,6 +21,9 @@ public class BehandlingsansvarligBean implements Serializable{
 	private String fakturaReferanse;
 	
 	
+	public BehandlingsansvarligBean(){
+		super();
+	}
 	
 	public BehandlingsansvarligBean(String organisasjonsnummer, String avsenderIdentifikator, String fakturaReferanse) {
 		super();

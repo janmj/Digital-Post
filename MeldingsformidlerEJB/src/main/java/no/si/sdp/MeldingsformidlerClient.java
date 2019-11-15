@@ -232,7 +232,8 @@ public class MeldingsformidlerClient {
 			
 			try{
 				behandlingsansvarlig = Behandlingsansvarlig.builder(forsendelse.getBehandlingsansvarlig().getOrganisasjonsnummer()).
-						avsenderIdentifikator(forsendelse.getBehandlingsansvarlig().getAvsenderIdentifikator()).build();
+						avsenderIdentifikator(forsendelse.getBehandlingsansvarlig().getAvsenderIdentifikator()).
+						fakturaReferanse(forsendelse.getBehandlingsansvarlig().getFakturaReferanse()).build();
 			}catch(Exception e){
 				behandlingsansvarlig = Behandlingsansvarlig.builder(AVSENDER_ORGNUMMER).build();
 				log.error("Feilet med bygging av behandlingsansvaarlig. Sender default.");
