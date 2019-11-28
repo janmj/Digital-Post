@@ -4,9 +4,7 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 
 import javax.ejb.Asynchronous;
-import javax.ejb.LocalBean;
 import javax.ejb.Schedule;
-import javax.ejb.Singleton;
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
@@ -44,7 +42,6 @@ public @Stateless class MLFServiceUtil implements MLFServiceUtilRemote {
      * Default constructor. 
      */
     public MLFServiceUtil() {
-        // TODO Auto-generated constructor stub
     }
     
 	@Asynchronous

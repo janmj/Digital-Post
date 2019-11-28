@@ -12,10 +12,9 @@
     <!-- other plugin versions -->
     <version.compiler.plugin>2.3.1</version.compiler.plugin>
     <version.ejb.plugin>2.3</version.ejb.plugin>
-    <!-- maven-compiler-plugin 	
-	<maven.compiler.target>1.6</maven.compiler.target>
-	<maven.compiler.source>1.6</maven.compiler.source>
-	-->
+    <!-- maven-compiler-plugin 	-->
+	<maven.compiler.target>1.8</maven.compiler.target>
+	<maven.compiler.source>1.8</maven.compiler.source>
 	
   </properties>
       <dependencyManagement>
@@ -36,7 +35,7 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+<!-- 
 	 <repositories>
 		<repository>
 			<id>sonatype-nexus-public</id>
@@ -49,7 +48,7 @@
 			</snapshots>
 		</repository>
 	 </repositories>
-
+ -->
   <dependencies>
 	<dependency>
 		<groupId>no.difi.sdp</groupId>
@@ -59,11 +58,6 @@
 
     <!-- Import the Common Annotations API (JSR-250), we use provided scope 
         as the API is included in JBoss AS 7 -->
-    <dependency>
-        <groupId>org.jboss.spec.javax.annotation</groupId>
-        <artifactId>jboss-annotations-api_1.1_spec</artifactId>
-        <scope>provided</scope>
-    </dependency>
 
     <!-- Import the EJB 3.1 API, we use provided scope as the API is included 
         in JBoss AS 7 -->
@@ -90,36 +84,19 @@
     	<version>2.4</version>
     </dependency>
     <dependency>
-    	<groupId>org.jboss.jbossas</groupId>
-    	<artifactId>jboss-as-varia</artifactId>
-    	<version>6.1.0.Final</version>
-    	<exclusions>
-    		<exclusion>
-    			<artifactId>istack-commons-runtime</artifactId>
-    			<groupId>com.sun.istack</groupId>
-    		</exclusion>
-    	</exclusions>
-    </dependency>
-    <dependency>
     	<groupId>log4j</groupId>
     	<artifactId>log4j</artifactId>
     	<version>1.2.14</version>
     </dependency>
     <dependency>
     	<groupId>org.jboss.ws</groupId>
-    	<artifactId>jbossws-wildfly902-server-integration</artifactId>
-    	<version>5.1.1.Final</version>
+    	<artifactId>jbossws-wildfly1000-server-integration</artifactId>
+    	<version>5.1.4.Final</version>
     </dependency>
     <dependency>
-    	<groupId>org.wildfly</groupId>
-    	<artifactId>wildfly-ejb3</artifactId>
-    	<version>10.0.0.Final</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.wildfly</groupId>
-    	<artifactId>wildfly-ejb-client-bom</artifactId>
-    	<version>10.0.0.Final</version>
-    	<type>pom</type>
+    	<groupId>junit</groupId>
+    	<artifactId>junit</artifactId>
+    	<version>4.7</version>
     </dependency>
   </dependencies>
   <build>

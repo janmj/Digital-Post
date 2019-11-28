@@ -6,8 +6,6 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
 import javax.ejb.Stateless;
@@ -15,14 +13,11 @@ import javax.jws.WebMethod;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
-import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.SchemaOutputResolver;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.ValidationEvent;
-import javax.xml.bind.ValidationEventHandler;
 import javax.xml.bind.util.JAXBSource;
 import javax.xml.transform.Result;
 import javax.xml.transform.stream.StreamResult;
@@ -31,9 +26,8 @@ import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import javax.xml.validation.Validator;
 
-import org.apache.commons.lang.RandomStringUtils;
 import org.apache.log4j.Logger;
-import org.jboss.ws.annotation.SchemaValidation;
+//import org.jboss.ws.annotation.SchemaValidation;
 import org.joda.time.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -52,7 +46,7 @@ import no.si.sdp.utils.MFServices;
 			name="MLFService",
 			serviceName="MLFService")
 @SOAPBinding(style=Style.DOCUMENT)
-@SchemaValidation(enabled=true)
+//@SchemaValidation(enabled=true)
 @Validated
 public @Stateless class MLFService implements MLFServiceRemote {
 	//static Logger log = Logger.getLogger(MLFService.class);

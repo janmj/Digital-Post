@@ -7,13 +7,14 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import no.si.sdp.service.util.MLFServiceUtilRemote;
+//import no.si.sdp.service.util.MLFServiceUtilRemote;
 
 import org.jboss.logging.Logger;
-import org.jboss.varia.scheduler.Schedulable;
+//import org.jboss.varia.scheduler.Schedulable;
 
 
-public class HentKvitteringerTask implements Schedulable {
+//public class HentKvitteringerTask implements Schedulable {
+public class HentKvitteringerTask {
 	static Logger log = Logger.getLogger(HentKvitteringerTask.class);
 	public HentKvitteringerTask() {
 		// TODO Auto-generated constructor stub
@@ -35,8 +36,8 @@ public class HentKvitteringerTask implements Schedulable {
 	private void hentkvitteringer(){
 		try {
 			Context ctx = getContext();
-			MLFServiceUtilRemote sdputil = (MLFServiceUtilRemote)ctx.lookup("MFEjbEAR/MeldingsformidlerEJB/MLFServiceUtil!no.si.sdp.service.util.MLFServiceUtilRemote"); 
-			sdputil.hentKvitteringer();
+			//MLFServiceUtilRemote sdputil = (MLFServiceUtilRemote)ctx.lookup("MFEjbEAR/MeldingsformidlerEJB/MLFServiceUtil!no.si.sdp.service.util.MLFServiceUtilRemote"); 
+			//sdputil.hentKvitteringer();
 		} catch (NamingException e) {
 			log.info(e);
 		} catch (Exception e) {

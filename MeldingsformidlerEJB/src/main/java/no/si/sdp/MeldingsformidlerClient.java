@@ -19,7 +19,6 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 
-import org.jboss.logging.Logger;
 import org.springframework.ws.client.WebServiceClientException;
 import org.springframework.ws.client.support.interceptor.ClientInterceptor;
 import org.springframework.ws.context.MessageContext;
@@ -42,7 +41,6 @@ import no.difi.sdp.client.domain.digital_post.SmsVarsel;
 import no.difi.sdp.client.domain.kvittering.ForretningsKvittering;
 import no.difi.sdp.client.domain.kvittering.KvitteringForespoersel;
 import no.si.sdp.beans.ForsendelseBean;
-import no.si.sdp.service.MLFService;
 import no.si.sdp.utils.MFServices;
 import no.si.sdp.utils.PropertiesServices;
 

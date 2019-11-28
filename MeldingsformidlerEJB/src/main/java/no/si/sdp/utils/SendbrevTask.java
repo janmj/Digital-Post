@@ -10,9 +10,10 @@ import javax.naming.NamingException;
 import no.si.sdp.service.util.MLFServiceUtilRemote;
 
 import org.jboss.logging.Logger;
-import org.jboss.varia.scheduler.Schedulable;
+//import org.jboss.varia.scheduler.Schedulable;
 
-public class SendbrevTask implements Schedulable{
+//public class SendbrevTask implements Schedulable{
+public class SendbrevTask{
 	static Logger log = Logger.getLogger(SendbrevTask.class);
 	
 	public SendbrevTask() {
